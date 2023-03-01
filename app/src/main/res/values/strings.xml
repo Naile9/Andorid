@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">ExampleOne</string>
-    <string name="btn">Button</string>
-    <string name="texteditString">Search</string>
+    <string name="save">Save</string>
+    <string name="btn">Edit</string>
+    <string name="filter">Enter your tags</string>
+    <string name="tag">Add tag</string>
     <string name="text1">Text1</string>
 </resources>

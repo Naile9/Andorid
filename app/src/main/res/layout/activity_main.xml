@@ -4,71 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray"
     android:layout_weight="0"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/passwordTextInputLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/passwordTextInputEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/texteditString" />
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="@string/filter"/>
 
-    </android.support.design.widget.TextInputLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="horizontal">
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/button1"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:layout_weight="2"
-            tools:ignore="MissingConstraints">
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/texteditString" />
-        </android.support.design.widget.TextInputLayout>
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="@string/tag"/>
+
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="2dp"
-                android:text="@string/btn"
+                android:text="@string/save"
                 android:textSize="20dp"/>
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="360dp">
+        android:layout_height="460dp"
+        android:layout_margin="10dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/gray_light"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Tagged Searches"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="AndroidFP"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button14"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -76,19 +83,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="Deitel"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button13"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -96,19 +105,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="Google"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button12"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -116,19 +127,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="IphoneFP"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button11"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -136,19 +149,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="JavaFP"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button10"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -156,19 +172,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="JavaHTP"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button9"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -176,11 +194,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
                     android:text="@string/text1"
                     android:textAlignment="center" />
@@ -188,7 +208,7 @@
                 <Button
                     android:id="@+id/button8"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -196,19 +216,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="Kotlin"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button7"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -216,19 +238,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="Rubi"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button17"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -236,19 +260,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="Golang"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button18"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -256,19 +282,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_weight="2"
-                    android:text="@string/text1"
+                    android:text="Samsung"
                     android:textAlignment="center" />
 
                 <Button
                     android:id="@+id/button6"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_margin="2dp"
                     android:text="@string/btn"
                     android:textSize="20dp" />
@@ -278,8 +306,8 @@
     <Button
         android:id="@+id/button20"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="2dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
         android:text="@string/btn"
         android:textSize="20dp"/>
 
